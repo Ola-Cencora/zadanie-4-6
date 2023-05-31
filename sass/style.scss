@@ -4,13 +4,18 @@
     box-sizing: border-box;
 } */
 
+.page-title {
+    font-size: 36px;
+    margin-top: 10px;
+}
+
 .section-title {
-    font-size: 46px;
+    font-size: 34px;
     font-weight: bold;
 }
 
 .section-subtitle {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: light;
 }
 
@@ -43,19 +48,18 @@ a {
 
             .brand {
                 text-decoration: none;
-                line-height: 110px;
-                margin-left: 120px;
                 color: gold;
             }
 
             .navigation {
                 display: flex;
-                line-height: 110px;
+                flex-wrap: wrap;
 
                 ul {
                     display: flex;
                     list-style-type: none;
                     justify-content: flex-end;
+                    flex-wrap: wrap;
                     
                     li {
                         display: inline-block;
@@ -82,21 +86,14 @@ a {
             margin-top: 160px;
             color: white;
 
-            h2 {
-                font-size: 40px;
-            }
-
-            h1 {
-                font-size: 80px;
-            }
-
             .button {
                 background-color: gold;
-                margin: 60px;
+                margin: 80px auto 50px auto;
                 padding: 20px 60px;
                 color: white;
                 text-decoration: none;
                 border-radius: 3px;
+                font-weight: bold;
             }
         }
     }
@@ -107,13 +104,14 @@ a {
 .services {
     position: relative;
     text-align: center;
-    margin: 80px 150px;
+    margin: 50px 80px;
     
     .row {
         margin-top: 40px;
 
         .card {
             border: none;
+            word-wrap: normal;
 
             i {
                 font-size: 40px;
@@ -136,7 +134,6 @@ a {
     .portfolio {
         position: relative;
         text-align: center;
-        margin: 80px 150px 0;
         padding: 100px 0;
 
         .row {
@@ -160,6 +157,11 @@ a {
 .footer {
     margin: 0 150px;
 
+    .col-12 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
     ul {
         list-style-type: none;
         justify-content: center;
@@ -182,4 +184,29 @@ a {
         }
     }
 
+}
+
+/* Media */
+
+@media (min-width: 767px) {
+
+    .page-subtitle {
+        font-size: 30px;
+    }   
+
+    .page-title {
+        font-size: 60px;
+    }
+
+    .section-title {
+        font-size: 46px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+    }
+
+    .brand, .navigation {
+        line-height: 110px;
+    }
 }
