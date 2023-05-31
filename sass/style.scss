@@ -136,7 +136,7 @@ a {
     .portfolio {
         position: relative;
         text-align: center;
-        margin: 80px 150px;
+        margin: 80px 150px 0;
         padding: 100px 0;
 
         .row {
@@ -153,4 +153,33 @@ a {
             }
         }
     }
+}
+
+/* Footer */
+
+.footer {
+    margin: 0 150px;
+
+    ul {
+        list-style-type: none;
+        justify-content: center;
+
+        a {
+            font-size: 0;
+
+            i {
+                font-size: 20px;
+                color: white;
+                background: black;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+                margin: 0 5px;
+
+            }
+        }
+    }
+
 }
