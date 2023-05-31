@@ -4,6 +4,26 @@
     box-sizing: border-box;
 } */
 
+.section-title {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    font-weight: light;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
 /* Splash */
 
 .splash {
@@ -77,6 +97,33 @@
                 color: white;
                 text-decoration: none;
                 border-radius: 3px;
+            }
+        }
+    }
+}
+
+/* services */
+
+.services {
+    position: relative;
+    text-align: center;
+    margin: 80px 150px;
+    
+    .row {
+        margin-top: 40px;
+
+        .card {
+            border: none;
+
+            i {
+                font-size: 40px;
+                color: gold;
+                border: solid 3px gold;
+                border-radius: 50%;
+                width: 82px;
+                height: 82px;
+                line-height: 78px;
+                margin-bottom: 16px;
             }
         }
     }
