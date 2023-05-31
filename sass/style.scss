@@ -128,3 +128,29 @@ a {
         }
     }
 }
+
+/* Portfolio */
+.grey {
+    background-color: rgb(236, 236, 236);
+
+    .portfolio {
+        position: relative;
+        text-align: center;
+        margin: 80px 150px;
+        padding: 100px 0;
+
+        .row {
+            margin-top: 70px;
+        
+            .card {
+                border: none;
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
